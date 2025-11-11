@@ -1,0 +1,19 @@
+Question 1: For each level of mental_health_risk ('Low', 'Medium', 'High'), calculate the average productivity_score and the average sleep_hours. Order the results by risk level
+
+Question 2: Identify the top 5 age and gender combinations that have the highest average social_support_score among clients whose employment_status is 'Unemployed'.
+
+Question 3: Count the number of individuals for each work_environment, separating the count into two columns based on their seeks_treatment status ('Yes' and 'No'). This requires conditional aggregation.
+
+Question 4: Calculate the average physical_activity_days and average stress_level for every combination of gender and mental_health_history ('Yes'/'No').
+
+Question 5:Find the employment_status that has the lowest average depression_score among individuals whose anxiety_score is greater than 15 and whose productivity_score is less than 60.
+
+Question 6:For clients grouped by their mental_health_risk and seeks_treatment status, calculate the ratio of the average physical_activity_days to the average social_support_score.
+
+Question 7:For each work_environment, rank clients based on their depression_score (highest score gets rank 1). Use a window function that assigns a unique, sequential rank (i.e., skipping ranks for ties, like RANK()). Then, retrieve the top 5 clients from each environment.
+
+Question 8:Identify all gender and work_environment combinations where the average anxiety_score is more than 20 higher than the overall average anxiety_score of the entire dataset.
+
+Question 9:Group clients by sleep_hours into custom bins: Short Sleep ( < 5.0 hours), Adequate Sleep (5.1 to 8.0 hours), and Long Sleep (> 8.0 hours). For each bin, calculate the average stress_level and the average productivity_score.
+
+Question 10: Clients in the Bottom Decile of Social Support (Subquery/Window Function)Find the employment_status and work_environment of all clients whose social_support_score falls within the bottom 10 (decile) of the overall social_support_score distribution. (This requires finding the 10th percentile value using either a subquery or a window function).
